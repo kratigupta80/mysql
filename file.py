@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 sql = "INSERT INTO student (rollno, name) VALUES (%s, %s)"
-val = (2, "Akash")
+val = (1, "Krati")
 mycursor.execute(sql, val)
 
 mydb.commit()
